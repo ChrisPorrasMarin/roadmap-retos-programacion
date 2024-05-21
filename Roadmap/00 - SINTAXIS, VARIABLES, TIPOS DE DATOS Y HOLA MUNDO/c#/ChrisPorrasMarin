@@ -1,0 +1,111 @@
+// https://dotnet.microsoft.com/es-es/languages/csharp
+
+/*EJERCICIO:
+ * - Crea un comentario en el código y coloca la URL del sitio web oficial del
+ *   lenguaje de programación que has seleccionado.
+ * - Representa las diferentes sintaxis que existen de crear comentarios
+ *   en el lenguaje (en una línea, varias...).
+ * - Crea una variable (y una constante si el lenguaje lo soporta).
+ * - Crea variables representando todos los tipos de datos primitivos
+ *   del lenguaje (cadenas de texto, enteros, booleanos...).
+ * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"*/
+
+// Declaración e inicialización de variables
+
+using System;
+
+namespace ConstanteEjemplo
+{
+    class Program
+    {
+
+            ///////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+
+            ////////////////////////CONSTANTES/////////////////////////////
+
+            ///////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+
+
+        // Declaración de una constante a nivel de clase
+        const int HorasEnUnDia = 24;
+
+        static void Main(string[] args)
+        {
+            // Declaración de una constante dentro del método
+            const int DiasEnUnAño = 365;
+
+            // Declaración e inicialización de variables
+            string nombre = "Ana";
+            int edad = 30;
+
+            // Uso de las constantes en un cálculo simple
+            int horasVividas = edad * DiasEnUnAño * HorasEnUnDia;
+
+            // Imprimir resultados
+            Console.WriteLine("Nombre: " + nombre);
+            Console.WriteLine("Edad: " + edad + " años");
+            Console.WriteLine(nombre + " ha vivido aproximadamente " + horasVividas + " horas.");
+
+            // Espera a que el usuario presione una tecla antes de cerrar el programa
+            Console.WriteLine("Presiona cualquier tecla para salir...");
+            Console.ReadKey();
+
+
+            ///////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+
+            /////////////////////TIPOS DE VARIABLES////////////////////////
+
+            ///////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+
+            // Tipos de datos integrales
+            byte numeroByte = 255;             // Rango: 0 a 255
+            sbyte numeroSByte = -128;          // Rango: -128 a 127
+            short numeroShort = -32768;        // Rango: -32,768 a 32,767
+            ushort numeroUShort = 65535;       // Rango: 0 a 65,535
+            int numeroInt = -2147483648;       // Rango: -2,147,483,648 a 2,147,483,647
+            uint numeroUInt = 4294967295;      // Rango: 0 a 4,294,967,295
+            long numeroLong = -9223372036854775808; // Rango: -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807
+            ulong numeroULong = 18446744073709551615; // Rango: 0 a 18,446,744,073,709,551,615
+
+            // Tipos de datos de punto flotante
+            float numeroFloat = 3.14F;         // Precisión de 7 dígitos
+            double numeroDouble = 3.141592653589793; // Precisión de 15-16 dígitos
+            decimal numeroDecimal = 3.1415926535897932384626433832M; // Precisión de 28-29 dígitos
+
+            // Tipo de datos booleano
+            bool esVerdadero = true;
+            bool esFalso = false;
+
+            // Tipo de datos de carácter
+            char caracter = 'A';
+
+            // Tipo de datos cadena de texto
+            string cadena = "Hola, mundo";
+
+            // Imprimir los valores
+            Console.WriteLine("byte: " + numeroByte);
+            Console.WriteLine("sbyte: " + numeroSByte);
+            Console.WriteLine("short: " + numeroShort);
+            Console.WriteLine("ushort: " + numeroUShort);
+            Console.WriteLine("int: " + numeroInt);
+            Console.WriteLine("uint: " + numeroUInt);
+            Console.WriteLine("long: " + numeroLong);
+            Console.WriteLine("ulong: " + numeroULong);
+            Console.WriteLine("float: " + numeroFloat);
+            Console.WriteLine("double: " + numeroDouble);
+            Console.WriteLine("decimal: " + numeroDecimal);
+            Console.WriteLine("bool (esVerdadero): " + esVerdadero);
+            Console.WriteLine("bool (esFalso): " + esFalso);
+            Console.WriteLine("char: " + caracter);
+            Console.WriteLine("string: " + cadena);
+
+            // Espera a que el usuario presione una tecla antes de cerrar el programa
+            Console.WriteLine("Presiona cualquier tecla para salir...");
+            Console.ReadKey();
+        }
+    }
+}
